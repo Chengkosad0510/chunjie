@@ -137,10 +137,10 @@ body {
     right: -200px;
   }
   40% {
-    right: 285px;   /* 👈 CHỈNH CON SỐ NÀY */
+    right: 200px;   /* 👈 CHỈNH CON SỐ NÀY */
   }
   100% {
-    right: 285px;   /* 👈 CHỈNH CON SỐ NÀY */
+    right: 200px;   /* 👈 CHỈNH CON SỐ NÀY */
     color: yellow;
   }
 }
