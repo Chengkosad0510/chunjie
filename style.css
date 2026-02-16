@@ -108,11 +108,10 @@ body {
 }
 
 .year {
-  position: absolute;
+  position: relative;
   top: 280px;
   width: 100%;
   text-align: center;
-  position: relative;
 }
 
 .year > span {
@@ -128,25 +127,27 @@ body {
 
 .new {
   position: absolute;
-  left: 65%;   /* 👈 tăng lên để dịch sang phải */
+  right: -150px;   /* bắt đầu ngoài màn hình */
+  top: 0;
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
 @keyframes new_animation {
   0% {
-    left: 120%;
+    right: -150px;
   }
   40% {
-    left: 65%;
+    right: 230px;   /* 👈 chỉnh số này nếu muốn dịch */
   }
   90% {
-    left: 65%;
+    right: 230px;
   }
   100% {
-    left: 65%;
+    right: 230px;
     color: yellow;
   }
 }
+
 
 .balloon {
   width: 100px;
