@@ -111,8 +111,6 @@ body {
   top: 280px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0px;
 }
 
 .year > span {
@@ -121,16 +119,23 @@ body {
   font-family: "Poppins", sans-serif;
   letter-spacing: -12px;
 }
-
+.year-wrap {
+  position: relative;
+  display: inline-block;
+  font-size: 175px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -12px;
+}
 .first_year {
  display: inline-block;
   
 }
 
 .new {
-  position: relative;
-  margin-left: -12px;
-  transform: translateX(300px); /* bắt đầu bên phải */
+  position: absolute;
+  right: 0;  /* luôn đúng vị trí số 5 */
+  transform: translateX(300px);
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
@@ -150,11 +155,10 @@ body {
 .balloon {
   position: absolute;
   top: -150px;
-  left: 50%;
-  transform: translateX(100px); /* chỉnh để nằm trên số 5 */
+  right: 0;   /* luôn nằm trên số 5 */
+  transform: translateX(10px);
   animation: balloon_animation 5s ease-in-out 1.5s forwards;
 }
-
 .balloon::after {
   content: "";
   width: 4px;
