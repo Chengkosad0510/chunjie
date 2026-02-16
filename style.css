@@ -128,7 +128,7 @@ body {
 
 .new {
   position: absolute;
-  left: 62%;   /* 👈 tăng lên để dịch sang phải */
+  left: 65%;   /* 👈 tăng lên để dịch sang phải */
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
@@ -137,13 +137,13 @@ body {
     left: 120%;
   }
   40% {
-    left: 58%;
+    left: 65%;
   }
   90% {
-    left: 58%;
+    left: 65%;
   }
   100% {
-    left: 58%;
+    left: 65%;
     color: yellow;
   }
 }
