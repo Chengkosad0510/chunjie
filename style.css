@@ -128,24 +128,24 @@ body {
 
 .new {
   position: absolute;
-  left: 50%; 
-  transform: translateX(-50%);
+  left: 50%;
   animation: new_animation 5s ease-in-out 1.5s forwards;
-  
 }
-
 @keyframes new_animation {
   0% {
     left: 120%;
   }
   40% {
     left: 50%;
+    transform: translateX(80px);   /* 👈 chỉnh số này */
   }
   90% {
     left: 50%;
+    transform: translateX(80px);
   }
   100% {
     left: 50%;
+    transform: translateX(80px);   /* 👈 chỉnh số này */
     color: yellow;
   }
 }
