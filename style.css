@@ -128,7 +128,7 @@ body {
 
 .new {
   position: absolute;
-  left: 58%;   /* 👈 tăng lên để dịch sang phải */
+  left: 62%;   /* 👈 tăng lên để dịch sang phải */
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
