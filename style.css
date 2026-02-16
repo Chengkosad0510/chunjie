@@ -128,22 +128,22 @@ body {
 
 .new {
   position: absolute;
-  right: -100px;
+  left: 58%;   /* 👈 tăng lên để dịch sang phải */
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
 @keyframes new_animation {
   0% {
-    right: -100px;
+    left: 120%;
   }
   40% {
-    right: 150px;
+    left: 58%;
   }
   90% {
-    right: 150px;
+    left: 58%;
   }
   100% {
-    right: 150px;
+    left: 58%;
     color: yellow;
   }
 }
