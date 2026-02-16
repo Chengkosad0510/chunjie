@@ -126,25 +126,24 @@ body {
 }
 
 .new {
-  position: relative;     /* đổi absolute -> relative */
-  display: inline-block;
-  transform: translateX(300px);  /* vị trí bắt đầu (bên phải) */
+  position: absolute;
+  right: -200px;   /* vị trí bắt đầu (ngoài màn hình bên phải) */
+  top: 0;
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
 @keyframes new_animation {
   0% {
-    transform: translateX(300px);
+    right: -200px;
   }
   40% {
-    transform: translateX(0px);   /* về đúng vị trí số 5 */
+    right: 285px;   /* 👈 CHỈNH CON SỐ NÀY */
   }
   100% {
-    transform: translateX(0px);
+    right: 285px;   /* 👈 CHỈNH CON SỐ NÀY */
     color: yellow;
   }
 }
-
 
 .balloon {
   width: 100px;
