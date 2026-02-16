@@ -126,24 +126,21 @@ body {
 }
 
 .new {
-  position: absolute;
-  right: -150px;   /* bắt đầu ngoài màn hình */
-  top: 0;
+  position: relative;     /* đổi absolute -> relative */
+  display: inline-block;
+  transform: translateX(300px);  /* vị trí bắt đầu (bên phải) */
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
 @keyframes new_animation {
   0% {
-    right: -150px;
+    transform: translateX(300px);
   }
   40% {
-    right: 230px;   /* 👈 chỉnh số này nếu muốn dịch */
-  }
-  90% {
-    right: 230px;
+    transform: translateX(0px);   /* về đúng vị trí số 5 */
   }
   100% {
-    right: 230px;
+    transform: translateX(0px);
     color: yellow;
   }
 }
