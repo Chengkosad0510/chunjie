@@ -112,6 +112,7 @@ body {
   top: 280px;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .year > span {
@@ -127,22 +128,24 @@ body {
 
 .new {
   position: absolute;
-  right: -100px;
+  left: 50%; 
+  transform: translateX(-50%);
   animation: new_animation 5s ease-in-out 1.5s forwards;
+  
 }
 
 @keyframes new_animation {
   0% {
-    right: -100px;
+    left: 120%;
   }
   40% {
-    right: 400px;
+    left: 50%;
   }
   90% {
-    right: 400px;
+    left: 50%;
   }
   100% {
-    right: 200px;
+    left: 50%;
     color: yellow;
   }
 }
