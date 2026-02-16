@@ -92,10 +92,9 @@ body {
 
 .old {
   color: #fff;
-  position: absolute;
-  top: 0%;
+  position: relative;
+  margin-left: -12px; /* khớp letter-spacing */
   animation: old_animation 2.5s ease-in-out 4s forwards;
-  margin-left: -80px;
 }
 
 @keyframes old_animation {
@@ -110,8 +109,10 @@ body {
 .year {
   position: relative;
   top: 280px;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
 }
 
 .year > span {
@@ -122,38 +123,35 @@ body {
 }
 
 .first_year {
-  margin-right: 100px;
+ display: inline-block;
+  
 }
 
 .new {
-  position: absolute;
-  right: -200px;   /* vị trí bắt đầu (ngoài màn hình bên phải) */
-  top: 0;
+  position: relative;
+  margin-left: -12px;
+  transform: translateX(300px); /* bắt đầu bên phải */
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
 @keyframes new_animation {
   0% {
-    right: -200px;
+    transform: translateX(300px);
   }
   40% {
-    right: 200px;   /* 👈 CHỈNH CON SỐ NÀY */
+    transform: translateX(0px);
   }
   100% {
-    right: 200px;   /* 👈 CHỈNH CON SỐ NÀY */
+    transform: translateX(0px);
     color: yellow;
   }
 }
 
 .balloon {
-  width: 100px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: rgb(0, 47, 255);
   position: absolute;
-  top: 50%;
-  right: -100px;
-  margin-top: -285px;
+  top: -150px;
+  left: 50%;
+  transform: translateX(100px); /* chỉnh để nằm trên số 5 */
   animation: balloon_animation 5s ease-in-out 1.5s forwards;
 }
 
